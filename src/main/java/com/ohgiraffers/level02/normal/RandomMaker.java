@@ -1,13 +1,13 @@
 package com.ohgiraffers.level02.normal;
 import java.util.Random;
 public class RandomMaker {
-    public int randomNumber(int min, int max){
+    public static int randomNumber(int min, int max){
         Random random = new Random();
         int randomNumber = random.nextInt(max) + min;
 
         return randomNumber;
     }
-    public String randomUpperAlphabet(int length) {
+    public static String randomUpperAlphabet(int length) {
         Random random = new Random();
         String result = "";
         for (int i = 0; i < length; i++) {
@@ -16,7 +16,7 @@ public class RandomMaker {
 
         return result;
     }
-    public String rockPaperScissors(){
+    public static String rockPaperScissors(){
         Random random = new Random();
         String result = "";
         int randomNumber = random.nextInt(3) + 1;
@@ -28,7 +28,7 @@ public class RandomMaker {
 
         return result;
     }
-    public String tossCoin(){
+    public static String tossCoin(){
         Random random = new Random();
         String result = "";
         int randomNumber = random.nextInt(2) + 1;
