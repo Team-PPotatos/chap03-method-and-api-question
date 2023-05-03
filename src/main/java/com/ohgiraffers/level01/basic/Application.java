@@ -6,8 +6,8 @@ public class Application {
 
         Calculator calculator = new Calculator();
         calculator.checkMethod();
-        calculator.sum1to10();
-        System.out.println("두 수 중 큰 수는 " + calculator.checkMaxNumber(10, 20) + "이다.");
+        System.out.println("1부터 10까지의 합은 : " + calculator.sum1to10());
+        calculator.checkMaxNumber(10, 20);
         System.out.println("10과 20의 합은 : " + calculator.sumTwoNumber(10, 20));
         System.out.println("10과 5의 차는 : " + calculator.minusTwoNumber(10, 5));
     }
