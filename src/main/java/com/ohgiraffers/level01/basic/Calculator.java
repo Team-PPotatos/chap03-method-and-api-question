@@ -4,12 +4,12 @@ public class Calculator {
     public void checkMethod(){
         System.out.println("메소드 호출 확인");
     }
-    public int sum1to10(){
+    public void sum1to10(){
         int sum = 0;
         for (int i=1; i<11; i++){
             sum += i;
         };
-        return sum;
+        System.out.println("1부터 10까지의 합: " + sum);
     }
 
     public int checkMaxNumber(int a, int b) {
