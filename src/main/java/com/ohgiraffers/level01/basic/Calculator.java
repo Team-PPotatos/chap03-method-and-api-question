@@ -4,16 +4,17 @@ public class Calculator {
     public void checkMethod(){
         System.out.println("메소드 호출 확인");
     }
-    public void sum1to10(){
+    public int sum1to10(){
         int sum = 0;
         for (int i=1; i<11; i++){
             sum += i;
         };
-        System.out.println("1부터 10까지의 합: " + sum);
+        return sum;
     }
 
-    public int checkMaxNumber(int a, int b) {
-        return (a > b)? a : b;
+    public void checkMaxNumber(int a, int b) {
+
+        System.out.println("두 수 중 가장 큰 수는 : " + ((a > b)? a : b));
     }
 
     public int sumTwoNumber(int a, int b){
